@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    font-family:sans-serif;
+    background-color: #edf4fa;
+}
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #424242;
+    padding: 1%;
+    color: white;
+    white-space:nowrap;
+    border-bottom:solid 10px #edf4fa;
+}
+
+header h1 {
+    padding:0px 15px;
+    font-size: 70px;
+    background-image: linear-gradient(#424242, cyan);
+    border-bottom:solid 5px #defffe;
+}
+
+nav {
+    display:block;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content:space-between;
+    min-width:fit-content;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 9px;
+    padding: 49px 10px 0 10px;
+    border-bottom:solid 5px #defffe;
+    background-image:linear-gradient(#424242, cyan);
+}
+
+nav ul li:hover {
+    background-image:linear-gradient(#424242, #ffc814);
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-image: url(./images/Blue\ fade\ banner.jpg);
+    background-size: cover;
+    align-items: end;
+    
+}
+
+.subtitle {
+    font-size: 50px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 1015px) {
+    header {
+        flex-direction:column;
+    }
+}
