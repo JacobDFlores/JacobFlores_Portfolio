@@ -11,6 +11,7 @@ body {
     background-color: #edf4fa;
 }
 
+/*Beginning of header section*/
 header {
     display:flex;
     justify-content:space-between;
@@ -29,6 +30,7 @@ header h1 {
     border-bottom:solid 5px #defffe;
 }
 
+/*navigation menu in header*/
 nav {
     display:block;
     font-weight: bold;
@@ -62,6 +64,7 @@ a {
     text-decoration: none;
 }
 
+/*banner for display*/
 .banner {
     display: flex;
     flex-direction: row-reverse;
@@ -80,6 +83,7 @@ a {
     padding-right: 50px;
 }
 
+/*beginnning of about me section*/
 summary {
     display:flex;
     padding: 20px 0;
@@ -115,6 +119,84 @@ summary h2 {
     align-self:center;
 }
 
+/*beginning of the work section*/
+.work {
+    display:flex;
+    flex-direction:row;
+    padding:20px 0;
+}
+
+.work-title{
+    display:flex;
+    justify-content:right;
+    width: 554px;
+    height:895px;
+    border-right:solid 5px #0e73cc;
+    position:static;
+}
+.work div h2 {
+    font-size:50px;   
+    padding-right:30px;
+}
+
+/*all flex boxes*/
+.flex-container {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+}
+
+.flex-head {
+    width:800px;
+    height:350px;
+    margin-top:15px;
+}
+.head {
+    width:800px;
+    height:350px;
+    background-color:aquamarine;
+    border:solid 4px #0e73cc;
+}
+
+.flex-body {
+    display:flex;
+    flex-direction:row;
+    width:800px;
+    height: 500px;
+    margin:15px 0;
+}
+
+.flex-left{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    width:400px;
+    height:500px;
+}
+
+.flex-right{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    height:500px;
+    align-items:flex-end;
+}
+
+.item{
+    width:380px;
+    height:230px;
+    background-color:#defffe;
+    border:solid 4px #0e73cc;
+}
+
+.item-4, .item-5 {
+    margin-top: 15px;
+}
+ 
+/*resizing the screen*/
 @media screen and (max-width: 1015px) {
     header {
         flex-direction:column;
