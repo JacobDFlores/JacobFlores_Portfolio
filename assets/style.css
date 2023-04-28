@@ -17,16 +17,16 @@ header {
     justify-content:space-between;
     align-items:center;
     background-color: #424242;
-    padding: 1%;
+    padding: 1% 1% 1% 0;
     color: white;
     white-space:nowrap;
     border-bottom:solid 10px #edf4fa;
 }
 
 header h1 {
-    padding:0px 15px;
+    padding:0px 25px;
     font-size: 70px;
-    background-image: linear-gradient(#424242, cyan);
+    background-image: linear-gradient(#424242, #00FFE7);
     border-bottom:solid 5px #defffe;
 }
 
@@ -51,7 +51,7 @@ nav ul li {
     margin-right: 9px;
     padding: 49px 10px 0 10px;
     border-bottom:solid 5px #defffe;
-    background-image:linear-gradient(#424242, cyan);
+    background-image:linear-gradient(#424242, #00FFE7);
 }
 
 nav ul li:hover {
@@ -154,11 +154,19 @@ summary h2 {
     height:350px;
     margin-top:15px;
 }
+
 .head {
     width:800px;
     height:350px;
-    background-color:aquamarine;
-    border:solid 4px #0e73cc;
+    background-image:url(./images/Pre\ work\ study\ guide.png);
+    background-size:800px;
+    border:solid 4px #001c4d;
+    transition:all 0.5s ease-in-out;
+}
+
+.head:hover, .item:hover{
+    filter:none;
+    transition:all 0.5s ease-in-out;
 }
 
 .flex-body {
@@ -189,12 +197,36 @@ summary h2 {
     width:380px;
     height:230px;
     background-color:#defffe;
-    border:solid 4px #0e73cc;
+    border:solid 4px #001c4d;
 }
 
 .item-4, .item-5 {
     margin-top: 15px;
 }
+
+.item, .head {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.item-2{
+    background-image:url(./images/horiseon\ refactor.png);
+    background-size:cover;
+    transition:all 0.5s ease-in-out;
+}
+
+h3{
+    margin-bottom:10px;
+    width:110px;
+    height:30px;
+    padding-top: 5px;
+    padding-left: 10px;
+    background-color:#001c4d;
+    color:white;
+}
+
+
 
 .contact-me {
    display:flex;
@@ -230,7 +262,9 @@ footer{
  
 /*resizing the screen*/
 @media screen and (max-width: 1015px) {
-    header {
+    header, summary, section {
         flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
 }
