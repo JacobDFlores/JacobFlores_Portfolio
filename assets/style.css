@@ -208,7 +208,7 @@ summary h2 {
 }
 
 .item-2{
-    background-image:url(./images/weatherForecast.png);
+    background-image:url(./images/smsImg.png);
     background-size:cover;
     transition:all 0.5s ease-in-out;
 }
